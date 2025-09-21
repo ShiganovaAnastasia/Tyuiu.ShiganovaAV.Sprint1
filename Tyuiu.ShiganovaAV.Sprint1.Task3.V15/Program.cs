@@ -1,4 +1,4 @@
-﻿using Tyuiu.ShiganovaAV.Sprint1.Task2.V24.Lib;
+﻿using Tyuiu.ShiganovaAV.Sprint1.Task3.V15.Lib;
 namespace Tyuiu.ShiganovaAV.Sprint1.Task1.V13
 {
     class Program
@@ -10,30 +10,35 @@ namespace Tyuiu.ShiganovaAV.Sprint1.Task1.V13
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #1                                                               *");
             Console.WriteLine("* Тема: Базовые навыки работа в С#                                        *");
-            Console.WriteLine("* Задание #2                                                              *");
-            Console.WriteLine("* Вариант #24                                                            *");
+            Console.WriteLine("* Задание #3                                                              *");
+            Console.WriteLine("* Вариант #15                                                             *");
             Console.WriteLine("* Выполнила: Шиганова Анастасия Владимировна |ПИНб-25-1|                  *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Написать программу, которая запрашивает у пользователя исходные данные, *");
-            Console.WriteLine("* вычисляет результат по формуле ( x - y ) ^ 2 и печатает его на экран.   *");
+            Console.WriteLine("* Написать программу, решающую следующую задачу: два автомобиля имеют     *");
+            Console.WriteLine("* скорости V1 км/ч и V2 км/ч соответственно, находятся на расстоянии S км *");
+            Console.WriteLine("* друг от друга и движутся в противоположные стороны.                     *");
+            Console.WriteLine("* Определить расстояние между ними через T часов.                         *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-           int x;
-            Console.WriteLine("Введите значение х:");
-            x = Convert.ToInt32(Console.ReadLine());
-           int y;
-            Console.WriteLine("Введите значение y:");
-            y = Convert.ToInt32(Console.ReadLine());
+            double v1=60;
+            double v2 = 80;
+            double S = 100;
+            double T = 2;
+            Console.WriteLine("Скорость первого автомобиля = " + v1);
+            Console.WriteLine("Скорость второго автомобиля = " + v2);
+            Console.WriteLine("Начально расстояние = " + S);
+            Console.WriteLine("Время = " + T);
+           
 
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("Квадрат разности ( x - y ) ^ 2 = " + ds.CalculateDiffSquare(x,y));
+            Console.WriteLine("Расстояние между ними через T часов = " + ds.DistanceOverTime(v1,v2,S,T));
             Console.ReadLine();
         }
     }

@@ -8,11 +8,11 @@ namespace Tyuiu.ShiganovaAV.Sprint1.Task4.V24.Test
         public void ValidExpression()
         {
             DataService ds = new DataService();
-            double x = 2;
-            double y = 3;
+            double x = 60;
+            double y = 30;
             var res = ds.Calculate(x, y);
             res = Math.Round(res, 3);
-            Assert.AreEqual(0.287, res);
+            Assert.AreEqual(1.199, res);
         }
     }
 }
